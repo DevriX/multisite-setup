@@ -14,7 +14,7 @@ $table_prefix = ''; // edit this with your local table prefix
 
 /* Multisite */
 # define( 'WP_ALLOW_MULTISITE', true );	// You need to remove the "#" when you install WordPress Multisite
-/* During Multisite installation WordPress will provide you those details. Simple replace them 
+/* During Multisite installation WordPress will provide you those details. Simple replace them */
 # define( 'MULTISITE', true );
 # define( 'SUBDOMAIN_INSTALL', false );
 # define( 'DOMAIN_CURRENT_SITE', '' );
