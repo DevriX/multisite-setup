@@ -8,7 +8,7 @@ define( 'DB_NAME', 'db_name_here' );
 define( 'DB_USER', 'db_username_here' );
 define( 'DB_PASSWORD', 'db_password_here' );
 define( 'DB_HOST', 'localhost' );
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 $table_prefix = ''; // edit this with your local table prefix
 
