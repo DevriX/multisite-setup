@@ -61,28 +61,28 @@ if ( ! defined( 'DB_COLLATE' ) ) {
  *
  * @since 2.6.0
  */
-if ( ! defined( 'AUTH_KEY' ) )
+if ( ! defined( 'AUTH_KEY' ) ) {
 	define( 'AUTH_KEY', '' );
 }
-if ( ! defined( 'SECURE_AUTH_KEY' ) )
+if ( ! defined( 'SECURE_AUTH_KEY' ) ) {
 	define( 'SECURE_AUTH_KEY',  '' );
 }
-if ( ! defined( 'LOGGED_IN_KEY' ) )
+if ( ! defined( 'LOGGED_IN_KEY' ) ) {
 	define( 'LOGGED_IN_KEY', '' );
 }
-if ( ! defined( 'NONCE_KEY' ) )
+if ( ! defined( 'NONCE_KEY' ) ) {
 	define( 'NONCE_KEY', '' );
 }
-if ( ! defined( 'AUTH_SALT' ) )
+if ( ! defined( 'AUTH_SALT' ) ) {
 	define( 'AUTH_SALT', '' );
 }
-if ( ! defined( 'SECURE_AUTH_SALT' ) )
+if ( ! defined( 'SECURE_AUTH_SALT' ) ) {
 	define( 'SECURE_AUTH_SALT', '' );
 }
-if ( ! defined( 'LOGGED_IN_SALT' ) )
+if ( ! defined( 'LOGGED_IN_SALT' ) ) {
 	define( 'LOGGED_IN_SALT', '' );
 }
-if ( ! defined( 'NONCE_SALT' ) )
+if ( ! defined( 'NONCE_SALT' ) ) {
 	define( 'NONCE_SALT', '' );
 }
 
