@@ -12,6 +12,16 @@ define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 $table_prefix = ''; // edit this with your local table prefix
 
+/* Security Salts, Keys, etc */
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
+
 /* Multisite */
 # define( 'WP_ALLOW_MULTISITE', true );	// You need to remove the "#" when you install WordPress Multisite
 /* During Multisite installation WordPress will provide you those details. Simple replace them */

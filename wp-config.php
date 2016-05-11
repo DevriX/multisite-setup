@@ -28,23 +28,29 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
  */
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-if ( ! defined( 'DB_NAME' ) )
+if ( ! defined( 'DB_NAME' ) ) {
     define( 'DB_NAME', '' );
-    /** MySQL database username */
-if ( ! defined( 'DB_USER' ) )
+}
+/** MySQL database username */
+if ( ! defined( 'DB_USER' ) ) {
     define( 'DB_USER', '' );
-    /** MySQL database password */
-if ( ! defined( 'DB_PASSWORD' ) )
-    define( 'DB_PASSWORD', '' );
-    /** MySQL hostname */
-if ( ! defined( 'DB_HOST' ) )
-    define( 'DB_HOST', 'localhost' );
-    /** Database Charset to use in creating database tables. */
-if ( ! defined( 'DB_CHARSET' ) )
-    define('DB_CHARSET', 'utf8mb4');
-    /** The Database Collate type. Don't change this if in doubt. */
-if ( ! defined( 'DB_COLLATE' ) )
+}
+/** MySQL database password */
+if ( ! defined( 'DB_PASSWORD' ) ) {
+	define( 'DB_PASSWORD', '' );	
+}
+/** MySQL hostname */
+if ( ! defined( 'DB_HOST' ) ) {
+	define( 'DB_HOST', 'localhost' );
+}
+/** Database Charset to use in creating database tables. */
+if ( ! defined( 'DB_CHARSET' ) ) {
+	define('DB_CHARSET', 'utf8mb4');	
+}
+/** The Database Collate type. Don't change this if in doubt. */
+if ( ! defined( 'DB_COLLATE' ) ) {
     define( 'DB_COLLATE', '' );
+}
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -55,14 +61,30 @@ if ( ! defined( 'DB_COLLATE' ) )
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+if ( ! defined( 'AUTH_KEY' ) )
+	define( 'AUTH_KEY', '' );
+}
+if ( ! defined( 'SECURE_AUTH_KEY' ) )
+	define( 'SECURE_AUTH_KEY',  '' );
+}
+if ( ! defined( 'LOGGED_IN_KEY' ) )
+	define( 'LOGGED_IN_KEY', '' );
+}
+if ( ! defined( 'NONCE_KEY' ) )
+	define( 'NONCE_KEY', '' );
+}
+if ( ! defined( 'AUTH_SALT' ) )
+	define( 'AUTH_SALT', '' );
+}
+if ( ! defined( 'SECURE_AUTH_SALT' ) )
+	define( 'SECURE_AUTH_SALT', '' );
+}
+if ( ! defined( 'LOGGED_IN_SALT' ) )
+	define( 'LOGGED_IN_SALT', '' );
+}
+if ( ! defined( 'NONCE_SALT' ) )
+	define( 'NONCE_SALT', '' );
+}
 
 /**#@-*/
 
@@ -88,6 +110,9 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 }
 
 /* Multisite */
+/*
+ * Remove the comment when you setup the multisite!
+ 
 if ( ! defined( 'WP_ALLOW_MULTISITE' ) ) {
     define( 'WP_ALLOW_MULTISITE', false );
 }
@@ -115,6 +140,8 @@ if ( ! defined( 'SITE_ID_CURRENT_SITE' )) {
 if ( ! defined( 'BLOG_ID_CURRENT_SITE' ) ) {
     define( 'BLOG_ID_CURRENT_SITE', 1 );
 }
+*
+*/
 
 /* That's all, stop editing! Happy blogging. */
 
